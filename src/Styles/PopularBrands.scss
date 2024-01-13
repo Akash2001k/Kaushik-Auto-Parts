@@ -1,0 +1,62 @@
+@import 'colors';
+
+.PopularBrands {
+    padding: 40px 0;
+    background: $secondary_color;
+
+    >.container {
+
+
+       div{
+        
+        >h5
+         {
+            color: $main_color;
+            text-align: center;
+        }
+       }
+
+
+        >.brand_cards {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            padding-bottom: 9px;
+
+            >.img_div {
+                margin: 0 9px;
+
+                >img {
+                    width: 180px;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* width */
+    .brand_cards::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    /* Track */
+    .brand_cards::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    .brand_cards::-webkit-scrollbar-thumb {
+        background: rgb(146, 146, 146);
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .brand_cards::-webkit-scrollbar-thumb:hover {
+        background: rgb(106, 106, 106);
+    }
+
+}

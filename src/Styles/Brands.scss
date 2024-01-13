@@ -1,0 +1,28 @@
+@import 'colors';
+
+.all_brands{
+    padding-top: 100px;
+    padding-bottom:20px ;
+    background: $secondary_color;
+
+    .brandCard{
+        background: white;
+        margin: 7px;
+        width: 264px;
+        height: 140px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:450px) { 
+    .all_brands{
+    
+        .brandCard{
+            margin: 7px;
+            width: 350px;
+        }
+    }
+} 

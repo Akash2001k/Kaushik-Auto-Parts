@@ -1,0 +1,66 @@
+@import 'colors';
+
+
+.footer {
+    // min-height: 50vh;
+    background: $dark_color;
+    padding: 40px 20px;
+
+    >.list_div {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        >.single_list {
+            >strong{
+                font-size: 18px;
+            }
+
+            >div{
+                >ul> {
+                    li {
+                        list-style: none;
+                        margin: 0 -20px 0;
+                    }
+            }
+            }
+
+        }
+    }
+
+    .social_div{
+        padding: 0 20px;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+   
+.footer {
+    >.list_div {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+
+        >.single_list {
+
+            >div{
+                >ul> {
+                    li {
+                        margin: 0 -20px 0 -40px;
+                    }
+            }
+        }
+            >strong{
+                font-size: 18px;
+            }}
+    }
+
+    .social_div{
+     flex-direction: column;
+     text-align: center;
+    }
+}
+}

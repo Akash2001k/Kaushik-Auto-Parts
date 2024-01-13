@@ -1,0 +1,57 @@
+@import 'colors';
+
+.founder{
+    background:$main_color;
+    >.container{
+        display: flex;
+        padding: 40px 0 ;
+        color: white;
+
+        >.imgdiv{
+           height: 300px;
+           
+        }
+
+       >div{
+          width: 50%;
+
+          >.founder_soc{
+            display: flex;
+          }
+
+         >img{
+            margin-top: 40px;
+            width: 270px;
+            height: 270px;
+            border-radius: 200px;
+
+         }
+         >span{
+            font-size: 20px;
+         }
+       }
+    }
+}
+
+@media only screen and (max-width:800px) { 
+    .founder{
+
+      padding: 0 20px;
+
+        >.container{
+            flex-direction: column;
+            text-align: center;
+    
+           >div{
+              width: 100%;
+
+              >.founder_soc{
+               justify-content: center;
+             }
+             >span{
+                font-size: 20px;
+             }
+           }
+        }
+    }
+} 

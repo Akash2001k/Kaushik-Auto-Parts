@@ -1,0 +1,59 @@
+@import 'colors';
+
+.BikeBrands {
+    padding: 40px 0;
+    background: $secondary_color;
+
+    >.container {
+
+
+
+        >h4 {
+            color: $main_color;
+            text-align: center;
+        }
+
+        >.bike_cards {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            padding-bottom: 9px;
+
+            >div {
+                margin: 0 9px;
+                border-radius: 20px;
+
+                >img {
+                    width: 180px;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* width */
+    .bike_cards::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    /* Track */
+    .bike_cards::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    .bike_cards::-webkit-scrollbar-thumb {
+        background: rgb(146, 146, 146);
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .bike_cards::-webkit-scrollbar-thumb:hover {
+        background: rgb(106, 106, 106);
+    }
+
+}

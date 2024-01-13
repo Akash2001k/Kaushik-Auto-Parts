@@ -1,0 +1,82 @@
+@import 'colors';
+
+#nav {
+    background: #000000c9;
+
+    >div {
+        >svg{
+            color: white;
+            font-size: 33px;
+            margin: 0 10px;
+            display: none;
+        }
+        >div {
+            >ul {
+                .nav-item {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 5px;
+                    color: white;
+                    cursor: pointer;
+
+                    position: relative;
+                }
+
+                /* Hover underline  */
+                .nav-item::after {
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: $main_color;
+                    position: absolute;
+                    left: 0;
+                    bottom: 2px;
+                    transition: 0.3s;
+                }
+
+                .nav-item:hover::after {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:992px) { 
+    #nav {
+        >div {
+            >svg{
+                display: block;
+            }
+        }
+    }
+} 
+
+/* =============================== Dropdown Service ========================================== */
+#dropd{
+    background: #000000b1;
+}
+#dropd a{
+    font-size: 14px;
+    color: white;
+}
+#dropd a:hover{
+    background: #737373;
+}
+
+// ======================== Slider ===================================
+
+.MenuSlider{
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    overflow: hidden;
+    transition: 0.4s;
+    background: #000000c9;
+    ul{
+        padding: 90px 20px;
+    }
+}
